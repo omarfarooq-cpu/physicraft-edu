@@ -1,0 +1,115 @@
+:root {
+    --black:#0b0b0b;
+    --blue:#1f6fb2;
+    --green:#1e8f4d;
+    --white:#f5f5f5;
+}
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--white);
+    color: var(--black);
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    border-bottom: 1px solid var(--blue);
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav a {
+    text-decoration: none;
+    color: var(--black);
+}
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+.hero img {
+    width: 120px;
+}
+.hero h1 {
+    font-size: 2.8rem;
+    color: var(--blue);
+}
+.tagline {
+    margin-top: 10px 0 20px;
+    color: var(--green);
+}
+.hero button {
+    background-color: var(--green);
+    color: var(--white);
+    border: none;
+    padding: 12px 30px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+.section {
+    max-width: 900px;
+    margin:  auto;
+    padding: 60px 20px;
+}
+.section h2 {
+    color: var(--blue);
+    border-left: 4px solid var(--green);
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+::highlighted {
+    background-color: var(--green);
+    font-weight: bold;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+.card{
+    border: 1px solid var(--blue);
+    border-radius: 12px;
+    padding: 20px;
+    background: #111;
+}
+.card h3 {
+    color: var(--green);
+}
+.cta{
+    background: linear-gradient(to right,#1f6fb2,#1e8f4d);
+    text-align: center;
+    padding: 60px 20px;
+
+}
+.cta button{
+    background: black;
+    color: white;
+    padding: 14px 30px;
+    border: none;
+    cursor: pointer;
+}
+.form-link {
+    display: inline-block;
+    padding: 14px 30px;
+    background: var(--green);
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+}
+.quick-contact {
+    margin-right: 15px;
+    cursor: pointer;
+    color: var(--blue);
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid var(--blue);
+    font-size: 0.9rem;
+}
