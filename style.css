@@ -35,6 +35,8 @@ nav a {
 }
 .hero img {
     width: 120px;
+    height: auto;
+    margin-bottom: 20px;
 }
 .hero h1 {
     font-size: 2.8rem;
