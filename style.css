@@ -27,7 +27,7 @@ nav ul {
 }
 nav a {
     text-decoration: none;
-    color: var(--black);
+    color: var(--white);
 }
 .hero {
     text-align: center;
