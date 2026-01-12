@@ -85,18 +85,24 @@ animation: fadeup 1s ease-in-out;
     margin-bottom: 25px;
 }
 .hero button {
-    background:#28a745;
-    color: white;
+    background:#1eff00;
+    color: #000;
     border: none;
-    padding: 12px 30px;
+    padding: 15px 35px;
     cursor: pointer;
     font-size: 16px;
-    border-radius: 25px;
-    transition: 0.3s;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 0 rgba(30, 255, 0, 0);
 }
 .hero button:hover {
-    background:#218838;
-    transform: scale(1.05);
+    transform: translateX(-4px)scale(1.05);
+    box-shadow: 
+    0 0 15px rgba(30, 255, 0, 0.6),
+    0 0 30px rgba(30, 255, 0, 0.4);
+}
+.hero button:active {
+    transform: scale(0.95);
 }
 .section {
     max-width: 1000px;
