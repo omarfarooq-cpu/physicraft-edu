@@ -204,7 +204,37 @@ service-icon {
 .service-card:hover .service-icon {
     color: #1eff00;
 }
-
+.testimonial-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+.testimonial-card {
+    background:white
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.testimonial-text {
+    font-style: italic;
+    color: var(--black);
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+.testimonial-card h4 {
+    color: green
+    margin-bottom: 3px;
+}
+.testimonial-span {
+    font-size: 14px;
+    color:var(--black)
+}
+.testimonial-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 35px rgba(0,0,0,0.15);
+}
 .cta{
     background: linear-gradient(to right,#1f6fb2,#1e8f4d);
     text-align: center;
@@ -260,6 +290,11 @@ footer {
 }
 @media (max-width: 900px) {
     .service-container {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 900px) {
+    .testimonial-container {
         grid-template-columns: 1fr;
     }
 }
