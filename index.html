@@ -30,7 +30,7 @@
     fadeElements.forEach(el => observer.observe(el));
     const navbar = document.querySelector('.navbar');
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
+        if (window.scrollY > 20) {
             navbar.classList.add('scrolled');
         } else {
             navbar.classList.remove('scrolled');
@@ -52,20 +52,20 @@
     </section>
     <section id="services" class="section fade-in">
         <h2>Our Services</h2>
-        <div class ="cards">
-        <div class="card">
+        <div class="services-cards">
+        <div class="service-card">
             <h3>Concept-Based Academic Learning</h3>
             <p>Clear understanding and logic-driven learning.</p>
         </div>
-        <div class="card">
+        <div class="service-card">
             <h3>Programming Fundamentals</h3>
             <p>Beginner-friendly logical and coding foundations.</p>
         </div>
-        <div class="card">
+        <div class="service-card">
             <h3>Academic Seminars & Workshops</h3>
             <p>Concept clarity, motivation, and academic confidence.</p>
         </div>
-        <div class="card">
+        <div class="service-card">
             <h3>Certificate Designing</h3>
             <p>Professional academic certificates for institutions
             </p>
