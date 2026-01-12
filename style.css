@@ -143,6 +143,34 @@ hero-subtitle {
     line-height: 1.6;
     color: white;
 }
+section{
+    padding: 80px 20px;
+    background: #0f172a;
+    color: #e5e7eb;
+}
+.section h2 {
+    font-size: 32px;
+    color: #38bdf8;
+    margin-bottom: 16px;
+}
+.section p {
+    font-size: 16px;
+    max-width: 700px;
+    line-height: 1.7;
+}
+.btn{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 22px;
+    background: #22c55e;
+    color: #000;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+}
+html{
+    scroll-behavior: smooth;
+}
 .service-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -236,6 +264,7 @@ service-icon {
     transform: translateY(-5px);
     box-shadow: 0 12px 28px rgba(0,0,0,0.18);
 }
+
 .cta{
     background: linear-gradient(to right,#1f6fb2,#1e8f4d);
     text-align: center;
@@ -248,6 +277,15 @@ service-icon {
     padding: 14px 30px;
     border: none;
     cursor: pointer;
+}
+.cta-btn.primary {
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    color: #000;
+    box-shadow: 0 10px 30px rgba(34, 197, 94, 0.35);
+}
+.cta-btn.primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(34, 197, 94, 0.55);
 }
 .form-link {
     display: inline-block;
