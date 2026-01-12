@@ -143,6 +143,12 @@ hero-subtitle {
     line-height: 1.6;
     color: white;
 }
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
 .service-card {
     background:#ffffff;
     border-radius: 12px;
@@ -241,4 +247,9 @@ footer {
 .fadein.show{
     opacity: 1;
     transform: translateY(0);
+}
+@media (max-width: 900px) {
+    .service-container {
+        grid-template-columns: 1fr;
+    }
 }
