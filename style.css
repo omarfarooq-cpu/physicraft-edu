@@ -27,10 +27,9 @@ body {
     padding: 20px 40px;
     background:linear-gradient(90deg,#003366,#005f5f);
 }
-.logo {
-    font-size: 28px;
-    font-weight: bold;
-    color: white;
+.hero{
+    padding-top: 100px;
+    padding-bottom: 120px;
 }
 .nav-links {
     list-style: none;
@@ -74,7 +73,7 @@ animation: fadeup 1s ease-in-out;
 
 }
 .hero img {
-    width: 120px;
+    width: 180px;
     height: auto;
     margin-bottom: 20px;
 }
@@ -222,7 +221,7 @@ html{
     color: #555;
     font-size: 16px;
 }
-service-icon {
+.service-icon {
     font-size: 40px;
     color:#0a3cff;
     margin-bottom: 15px;
@@ -286,6 +285,29 @@ service-icon {
 .cta-btn.primary:hover {
     transform: translateY(-3px);
     box-shadow: 0 15px 40px rgba(34, 197, 94, 0.55);
+}
+.section{
+    text-align: left;
+}
+#seminar{
+    text-align: center;
+}
+.cta-btn.secondary {
+    background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+    color: #000;
+    box-shadow: 0 10px 30px rgba(56, 189, 248, 0.55);
+}
+.cta-btn.secondary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(56, 189, 248, 0.75);
+}
+#pricing{
+    text-align: left;
+}
+.seminars{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .form-link {
     display: inline-block;
