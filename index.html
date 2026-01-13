@@ -3,6 +3,11 @@
     <header>
         <nav class="navbar">
             <div class="logo">PhysiCraft EDU</div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -242,6 +247,11 @@ PhysiCraft EDU aims to grow alongside institutions, supporting both educators an
       link.classList.add('active');
     }
   });
+    </script>
+    <script>
+        function toggleMenu(){
+            document.getElementById("navLinks").classList.toggle("show");
+        }
     </script>
 </body>
 </html>
