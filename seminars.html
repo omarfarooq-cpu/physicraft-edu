@@ -1,27 +1,113 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+    <header>
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="logo">PhysiCraft EDU</div>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="seminars.html">Seminars</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li>
+        <a href="https://wa.me/917092840069" target="_blank" class="nav-cta">
+          Contact
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+    </header>
 <head>
-    <title>PhysiCraft EDU Seminars</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PhysiCraft EDU | Academic Seminars</title>
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <section class="hero">
-        <h1>Academic Seminars by PhysiCraft EDU</h1>
-        <p class="tagline">Concept clarity, Motivation, Confidence</p>
-        <button onclick="openWhatsapp()">Book a Seminar
-        </button>
-    </section>
-    <section class="section">
-        <h2>What We Offer</h2>
-        <ul></ul>
-            <li>Concept-based learning sessions</li>
-            <li>Academic motivation and seminars</li>
-            <li>Intractive student engagement</li>
-            <li>Institution certificates support</li>
-        </ul>
-    </section>
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Academic Seminars by PhysiCraft EDU</h1>
+    <p class="tagline">
+      Concept clarity • Motivation • Academic confidence
+    </p>
 
-    <script src="script.js"></script>
+    <button class="cta-btn" onclick="openWhatsapp()">
+      Book a Seminar
+    </button>
+  </section>
+
+  
+  <section class="section">
+    <h2>What We Offer</h2>
+    <ul>
+      <li>Concept-driven academic seminars</li>
+      <li>60-120 minutes interactive sessions</li>
+      <li>Curriculum-aligned explanations</li>
+      <li>Active student engagement & Q&A</li>
+      <li>Institution certificate support</li>
+    </ul>
+  </section>
+
+  <!-- WHO IS THIS FOR -->
+  <section class="section">
+    <h2>Who Is This Seminar For?</h2>
+    <ul>
+      <li>Schools (Classes 8–12)</li>
+      <li>Undergraduate colleges</li>
+      <li>Academic clubs & departments</li>
+      <li>Orientation & enrichment programs</li>
+    </ul>
+  </section>
+
+  <!-- OUTCOMES -->
+  <section class="section">
+    <h2>Student Outcomes</h2>
+    <ul>
+      <li>Stronger conceptual understanding</li>
+      <li>Improved academic confidence</li>
+      <li>Better problem-solving approach</li>
+      <li>Positive learning mindset</li>
+    </ul>
+  </section>
+
+  <!-- CUSTOMIZATION NOTE -->
+  <section class="section highlight">
+    <p>
+      📌 Seminar content and duration can be customized based on
+      institutional requirements and student academic level.
+    </p>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="section center">
+    <h2>Plan an Academic Seminar With Us</h2>
+    <button class="cta-btn" onclick="openWhatsapp()">
+      Request Seminar Proposal
+    </button>
+  </section>
+<footer class="footer">
+    <p>"When concepts are clear, learning becomes confident and long-lasting."</p>
+    <p>&copy;2026 PhysiCraft EDU. All rights reserved.</p>
+</footer>
+  <script src="script.js"></script>
+  <script>
+    const navLinks = document.querySelectorAll('.nav-links a');
+
+
+  const currentPage = window.location.pathname.split("/").pop();
+
+
+  navLinks.forEach(link => {
+
+    if(link.getAttribute('href') === currentPage){
+      link.classList.add('active');
+    }
+  });
+  </script>
 </body>
 </html>

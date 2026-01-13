@@ -4,6 +4,7 @@
         <nav class="navbar">
             <div class="logo">PhysiCraft EDU</div>
             <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -227,6 +228,20 @@ PhysiCraft EDU aims to grow alongside institutions, supporting both educators an
                 instaBtn.classList.remove("show");
             }
         })
+    </script>
+    <script src="script.js"></script>
+    <script>
+        const navLinks = document.querySelectorAll('.nav-links a');
+
+  
+  const currentPage = window.location.pathname.split("/").pop();
+
+  navLinks.forEach(link => {
+    
+    if(link.getAttribute('href') === currentPage){
+      link.classList.add('active');
+    }
+  });
     </script>
 </body>
 </html>

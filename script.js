@@ -3,4 +3,5 @@ function openWhatsapp() {
     const message = "Hello PhysiCraft EDU , we are interested in academic collaboration.";
     window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, '_blank');
 }   
-                        
+instaBtn.classList.add("show");
+                   
