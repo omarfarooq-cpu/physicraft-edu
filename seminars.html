@@ -4,7 +4,11 @@
 <nav class="navbar">
   <div class="nav-container">
     <div class="logo">PhysiCraft EDU</div>
-
+    <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="seminars.html">Seminars</a></li>
@@ -109,5 +113,10 @@
     }
   });
   </script>
+  <script>
+        function toggleMenu(){
+            document.getElementById("navLinks").classList.toggle("show");
+        }
+    </script>
 </body>
 </html>
