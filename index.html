@@ -1,5 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<head>
+    <title>PhysiCraft EDU | Concept-Based Learning for Schools & Colleges</title>
+    <meta name="description" content="PhysiCraft EDU provides concept-driven academic seminars,workshops,and learning support for schools and colleges. Learn with clarity and confidence.">
+    <link ref="icon" href="favicon.ico">
+    <link
+    rel="stylesheet";
+    href="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <meta charset="UTF-8">
+    <meta name="google-site-verification" content="KFetS9R2CCwmsO2P7YAHdcv9TcDsYYKyIl8Wc0vOcPg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
     <header>
         <nav class="navbar">
             <div class="logo">PhysiCraft EDU</div>
@@ -16,40 +31,6 @@
             </ul>
         </nav>
     </header>
-<head>
-    <title>PhysiCraft EDU | Concept-Based Learning for Schools & Colleges</title>
-    <meta name="description" content="PhysiCraft EDU provides concept-driven academic seminars,workshops,and learning support for schools and colleges. Learn with clarity and confidence.">
-    <link ref="icon" href="favicon.ico">
-    <link
-    rel="stylesheet";
-    href="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-    <meta charset="UTF-8">
-    <meta name="google-site-verification" content="KFetS9R2CCwmsO2P7YAHdcv9TcDsYYKyIl8Wc0vOcPg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-</head>
-<script>
-    const fadeElements = document.querySelectorAll('.fade-in');
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('show');
-            }
-        });
-    }, { 
-        threshold: 0.2 
-        });
-    fadeElements.forEach(el => observer.observe(el));
-    const navbar = document.querySelector('.navbar');
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 20) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
-    });
-</script>
-<body>
     <section class="hero fade-in">
         <img src="https://i.ibb.co/Txxnvp6f/32062-removebg-preview.png" alt="PhysiCraft EDU Logo" class="hero-logo" >
         <h1> PhysiCraft EDU</h1>
@@ -256,5 +237,26 @@ PhysiCraft EDU aims to grow alongside institutions, supporting both educators an
             document.getElementById("navLinks").classList.toggle("show");
         }
     </script>
+    <script>
+    const fadeElements = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            }
+        });
+    }, { 
+        threshold: 0.2 
+        });
+    fadeElements.forEach(el => observer.observe(el));
+    const navbar = document.querySelector('.navbar');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 20) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+</script>
 </body>
 </html>
